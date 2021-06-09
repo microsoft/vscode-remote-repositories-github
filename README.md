@@ -1,31 +1,62 @@
+# Visual Studio Code Remote Repositories
 
-# Contributing
+This repository is for providing feedback on the **Visual Studio Remote Repositories** extension. You can use the repository to report issues or submit feature requests.
 
-This project welcomes contributions and suggestions.  Most contributions require you to agree to a
-Contributor License Agreement (CLA) declaring that you have the right to, and actually do, grant us
-the rights to use your contribution. For details, visit https://cla.opensource.microsoft.com.
+The **Remote Repositories extension** lets you quickly browse, search, edit, and commit to any remote GitHub repository directly from within Visual Studio Code, with support for Azure repos coming soon.
 
-When you submit a pull request, a CLA bot will automatically determine whether you need to provide
-a CLA and decorate the PR appropriately (e.g., status check, comment). Simply follow the instructions
-provided by the bot. You will only need to do this once across all repos using our CLA.
+## Why do you need Remote Repositories?
 
-This project has adopted the [Microsoft Open Source Code of Conduct](https://opensource.microsoft.com/codeofconduct/).
-For more information see the [Code of Conduct FAQ](https://opensource.microsoft.com/codeofconduct/faq/) or
-contact [opencode@microsoft.com](mailto:opencode@microsoft.com) with any additional questions or comments.
+As developers, we often clone Git repos locally just to browse them or make small edits. We may want to look at the source code of a library we use, experiment with new tools, or just feel the desire to learn something new. 
 
-# Legal Notices
+However, cloning repos takes time and maintenance, as your local copy can quickly become out of date if you don't pull changes regularly. Plus, if you don't know the codebase you're cloning, there may be security risks involved too!
 
-Microsoft and any contributors grant you a license to the Microsoft documentation and other content
-in this repository under the [Creative Commons Attribution 4.0 International Public License](https://creativecommons.org/licenses/by/4.0/legalcode),
-see the [LICENSE](LICENSE) file, and grant you a license to any code in the repository under the [MIT License](https://opensource.org/licenses/MIT), see the
-[LICENSE-CODE](LICENSE-CODE) file.
+The Remote Repositories extension in VS Code gives you a fast, convenient, and safe way to open, browse, and edit repos quickly.
 
-Microsoft, Windows, Microsoft Azure and/or other Microsoft products and services referenced in the documentation
-may be either trademarks or registered trademarks of Microsoft in the United States and/or other countries.
-The licenses for this project do not grant you rights to use any Microsoft names, logos, or trademarks.
-Microsoft's general trademark guidelines can be found at http://go.microsoft.com/fwlink/?LinkID=254653.
+Here are some **great situations** in which you may choose to use Remote Repositories to work on a codebase:
 
-Privacy information can be found at https://privacy.microsoft.com/en-us/
+- To **browse**, **learn**, or **search** a codebase or parts of one, either as it exists today or at any point in history, directly in VS Code.
+- To make **edits/tweaks** that don't require full validation, like building and running tests (validation can still happen in GitHub Actions triggered by a commit). This includes updates to docs or readme files, fixing typos, or make other smaller changes.
+- To quickly review a **pull request** (PR), without having to check-out or in any way affect your local setup.
+- To work on docs using VS Code's powerful **Markdown** editor, such as taking notes, or creating/editing/reviewing blog posts.
+... And many more!
 
-Microsoft and any contributors reserve all other rights, whether under their respective copyrights, patents,
-or trademarks, whether by implication, estoppel or otherwise.
+## Getting started
+
+You can quickly and easily open a GitHub repository either by searching for **Remote Repositories: Open Remote Repository...** from the Command Palette (press `F1`), or choosing **Open Remote Repository...** from the remote indicator (the green button in the lower left corner of the status bar).
+
+If you haven’t logged into GitHub from VS Code before, you’ll be prompted to authenticate with your GitHub account.
+
+## Features
+
+- Open any GitHub repository directly from GitHub — no cloning or local repository required
+- Quickly search for a repository or pull request to open — can also copy/paste links directly from GitHub
+- Repositories are always opened to the latest version on GitHub, unless you have uncommitted changes
+- Similar to editing directly on GitHub, committing changes will go directly to GitHub — no pushing or publishing branches required
+- Working changes are independent to the branch — allows working on multiple branches simultaneously!
+     - When you pause work on one branch and switch to another one, you don’t need to stash your changes — they’ll stay on the previous branch, and when you go back, your changes will be there to pick up right where you left off
+- Automatically detects if there are new changes on GitHub
+     - An indicator of the number of unpulled commits will be shown in the status bar
+     - Files with potential merge conflicts (e.g. you've modified the same file as someone else) will be highlighted
+- Options to continue working in a more powerful environment
+     - When you use **Continue Working on...** from the Command Palette or from the remote indicator, you're presented the option to continue your work locally, in a container volume (if you have the [Remote - Containers](https://marketplace.visualstudio.com/items?itemName=ms-vscode-remote.remote-containers) extension), or in GitHub Codespaces
+
+## Releases
+
+While an optional install, this extension releases along with VS Code. The [VS Code release notes](https://code.visualstudio.com/updates/) will include a summary of changes.
+
+## Providing Feedback
+
+You can use this repository to:
+
+- Up-vote a feature request or request a new one
+- Search for existing issues already reported for potential workarounds
+- Report a problem if you don't find what you are looking for
+
+## License
+
+By downloading and using the Visual Studio Code Remote Repositories extension and its related components, you agree to the product [license terms](https://marketplace.visualstudio.com/items/GitHub.remotehub/license) and [privacy statement](https://www.microsoft.com/en-us/privacystatement/EnterpriseDev/default.aspx).
+
+License for this repository:
+
+Copyright © Microsoft Corporation All rights reserved.
+Creative Commons Attribution 4.0 License (International): https://creativecommons.org/licenses/by/4.0/legalcode
