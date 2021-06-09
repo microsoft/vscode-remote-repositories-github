@@ -4,7 +4,7 @@ This repository is for providing feedback on the **Visual Studio Remote Reposito
 
 The **Remote Repositories extension** lets you quickly browse, search, edit, and commit to any remote GitHub repository directly from within Visual Studio Code, with support for Azure repos coming soon.
 
-## Why do you need Remote Repositories?
+## Why Remote Repositories?
 
 As developers, we often clone Git repos locally just to browse them or make small edits. We may want to look at the source code of a library we use, experiment with new tools, or just feel the desire to learn something new. 
 
@@ -20,13 +20,9 @@ Here are some **great situations** in which you may choose to use Remote Reposit
 - To work on docs using VS Code's powerful **Markdown** editor, such as taking notes, or creating/editing/reviewing blog posts.
 ... And many more!
 
-## Getting started
+## Features
 
 You can quickly and easily open a GitHub repository either by searching for **Remote Repositories: Open Remote Repository...** from the Command Palette (press `F1`), or choosing **Open Remote Repository...** from the remote indicator (the green button in the lower left corner of the status bar).
-
-If you haven’t logged into GitHub from VS Code before, you’ll be prompted to authenticate with your GitHub account.
-
-## Features
 
 - Open any GitHub repository directly from GitHub — no cloning or local repository required
 - Quickly search for a repository or pull request to open — can also copy/paste links directly from GitHub
@@ -51,6 +47,10 @@ You can use this repository to:
 - Up-vote a feature request or request a new one
 - Search for existing issues already reported for potential workarounds
 - Report a problem if you don't find what you are looking for
+
+If you have a question, connect with the community using any of these social platforms:
+
+[![Twitter](docs/Twitter_Social_Icon_24x24.png)](https://twitter.com/code) [![Stack Overflow](docs/so-image-24x24.png)](https://stackoverflow.com/questions/tagged/vscode) [![VS Code Dev Community Slack](docs/Slack_Mark-24x24.png)](https://aka.ms/vscode-dev-community) [![VS CodeGitter](docs/gitter-icon-24x24.png)](https://gitter.im/Microsoft/vscode)
 
 ## License
 
