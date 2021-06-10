@@ -1,6 +1,6 @@
-# Visual Studio Code Remote Repositories
+# Remote Repositories
 
-This repository is for providing feedback on the **Visual Studio Remote Repositories** extension. You can use the repository to report issues or submit feature requests.
+This repository is for providing feedback on the **Remote Repositories** extension. You can use the repository to report issues or submit feature requests.
 
 The **Remote Repositories extension** lets you quickly browse, search, edit, and commit to any remote GitHub repository directly from within Visual Studio Code, with support for Azure repos coming soon.
 
@@ -54,7 +54,7 @@ If you have a question, connect with the community using any of these social pla
 
 ## License
 
-By downloading and using the Visual Studio Code Remote Repositories extension and its related components, you agree to the product [license terms](https://marketplace.visualstudio.com/items/GitHub.remotehub/license) and [privacy statement](https://www.microsoft.com/en-us/privacystatement/EnterpriseDev/default.aspx).
+By downloading and using the Remote Repositories extension and its related components, you agree to the product [license terms](https://marketplace.visualstudio.com/items/GitHub.remotehub/license) and [privacy statement](https://www.microsoft.com/en-us/privacystatement/EnterpriseDev/default.aspx).
 
 License for this repository:
 
