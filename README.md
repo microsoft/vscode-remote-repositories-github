@@ -60,3 +60,4 @@ License for this repository:
 
 Copyright © Microsoft Corporation All rights reserved.
 Creative Commons Attribution 4.0 License (International): https://creativecommons.org/licenses/by/4.0/legalcode
+For any code or snippets within this repository itself: https://github.com/microsoft/vscode-remote-repositories-github/blob/main/LICENSE-CODE. 
