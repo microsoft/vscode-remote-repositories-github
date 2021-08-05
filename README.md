@@ -1,18 +1,18 @@
-# Remote Repositories
+# GitHub Repositories
 
-This repository is for providing feedback on the **Remote Repositories** extension. You can use the repository to report issues or submit feature requests.
+This repository is for providing feedback on the **GitHub Repositories** extension. You can use the repository to report issues or submit feature requests.
 
-The **Remote Repositories extension** lets you quickly browse, search, edit, and commit to any remote GitHub repository directly from within Visual Studio Code, with support for Azure repos coming soon.
+The **GitHub Repositories extension** lets you quickly browse, search, edit, and commit to any remote GitHub repository directly from within Visual Studio Code, with support for Azure repos coming soon.
 
-## Why Remote Repositories?
+## Why GitHub Repositories?
 
 As developers, we often clone Git repos locally just to browse them or make small edits. We may want to look at the source code of a library we use, experiment with new tools, or just feel the desire to learn something new. 
 
 However, cloning repos takes time and maintenance, as your local copy can quickly become out of date if you don't pull changes regularly. Plus, if you don't know the codebase you're cloning, there may be security risks involved too!
 
-The Remote Repositories extension in VS Code gives you a fast, convenient, and safe way to open, browse, and edit repos quickly.
+The GitHub Repositories extension in VS Code gives you a fast, convenient, and safe way to open, browse, and edit repos quickly.
 
-Here are some **great situations** in which you may choose to use Remote Repositories to work on a codebase:
+Here are some **great situations** in which you may choose to use GitHub Repositories to work on a codebase:
 
 - To **browse**, **learn**, or **search** a codebase or parts of one, either as it exists today or at any point in history, directly in VS Code.
 - To make **edits/tweaks** that don't require full validation, like building and running tests (validation can still happen in GitHub Actions triggered by a commit). This includes updates to docs or readme files, fixing typos, or make other smaller changes.
@@ -22,7 +22,7 @@ Here are some **great situations** in which you may choose to use Remote Reposit
 
 ## Features
 
-You can quickly and easily open a GitHub repository either by searching for **Remote Repositories: Open Remote Repository...** from the Command Palette (press `F1`), or choosing **Open Remote Repository...** from the remote indicator (the green button in the lower left corner of the status bar).
+You can quickly and easily open a GitHub repository either by searching for **GitHub Repositories: Open Remote Repository...** from the Command Palette (press `F1`), or choosing **Open Remote Repository...** from the remote indicator (the green button in the lower left corner of the status bar).
 
 - Open any GitHub repository directly from GitHub — no cloning or local repository required
 - Quickly search for a repository or pull request to open — can also copy/paste links directly from GitHub
@@ -54,7 +54,7 @@ If you have a question, connect with the community using any of these social pla
 
 ## License
 
-By downloading and using the Remote Repositories extension and its related components, you agree to the product [license terms](https://marketplace.visualstudio.com/items/GitHub.remotehub/license) and [privacy statement](https://www.microsoft.com/en-us/privacystatement/EnterpriseDev/default.aspx).
+By downloading and using the GitHub Repositories extension and its related components, you agree to the product [license terms](https://marketplace.visualstudio.com/items/GitHub.remotehub/license) and [privacy statement](https://www.microsoft.com/en-us/privacystatement/EnterpriseDev/default.aspx).
 
 License for this repository:
 
