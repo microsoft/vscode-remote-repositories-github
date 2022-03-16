@@ -64,7 +64,12 @@ When working with either GitHub or Azure repositories, you have several options 
 
 While an optional install, this extension releases along with VS Code. The [VS Code release notes](https://code.visualstudio.com/updates/) will include a summary of changes.
 
-You can also install the [_GitHub Repositories (Insiders)_ extension](https://marketplace.visualstudio.com/items?itemName=GitHub.remotehub-insiders) in VS Code Insiders for early feedback and testing. Note, the Stable and Insiders version of this extension can NOT be installed at the same time — use the Extensions Viewlet to choose which version of the extension you want to use. No data is shared between the Stable and Insiders versions of the extension.
+You can also install the pre-release version of this extension for early feedback and testing. The pre-release version of this extension works best in VS Code Insiders. You can learn more about VS Code's support for pre-release extensions [here](https://code.visualstudio.com/api/working-with-extensions/publishing-extension#prerelease-extensions). 
+
+The pre-release version of this extension replaces the [_GitHub Repositories (Insiders)_ extension](https://marketplace.visualstudio.com/items?itemName=GitHub.remotehub-insiders), which is now deprecated. If you are still using the _GitHub Repositories (Insiders)_ extension and want to migrate to pre-releases,
+1. Commit any uncommitted changes in your existing GitHub Repositories workspaces to retain access to them after you uninstall the extension.
+2. Uninstall the _GitHub Repositories (Insiders)_ extension.
+3. Install the pre-release edition of the GitHub Repositories extension.
 
 ## Providing Feedback
 
