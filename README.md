@@ -1,4 +1,4 @@
-# Remote Repositories
+## Remote Repositories
 
 This repository is for providing feedback on the **GitHub Repositories** and **Azure Repos** extensions. You can use the repository to report issues or submit feature requests.
 
