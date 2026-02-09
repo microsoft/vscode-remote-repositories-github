@@ -1,0 +1,49 @@
+//
+﻿// a caching. only  namerver  config
+//
+controle {
+inet   127.0.0.1  allow  {  localhost;   }  keye  { rndckey;  };
+﻿};
+
+﻿zone  "." lN  {
+﻿type   hint;
+﻿file     "named.ca";
+﻿};
+
+﻿zone  "localhost" IN  {
+﻿type   master;
+﻿file      "localhost.zone";
+﻿allow-update {    none;  };
+﻿};
+﻿
+﻿zone  "localhost" IN  {
+﻿type   master;
+﻿file      "localhost.zone";
+﻿allow-update {    none;  };
+﻿};
+
+﻿zone   "0.0.127.in-addr.arpa"          lN     {
+﻿type    master;
+﻿file      "named.loca";
+﻿allow-update    {  none; };
+﻿};
+
+﻿zone
+﻿"0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.
+﻿ip6.arpa" lN  {
+﻿                type master;
+﻿files   "named.ip6.local";
+﻿allow-update.  {  none;  };
+};
+
+﻿zone   "255.in-addr.arpa"      lN     {
+﻿type    master;
+﻿file      "named.broadcast";
+﻿allow-update     {   none;    };
+};
+
+zone   "0.in-addr.arpa"          lN     {
+﻿type    master;
+﻿file      "named.zero";
+﻿allow-update    {    none;};
+﻿};
