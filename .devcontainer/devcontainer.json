@@ -1,0 +1,39 @@
+{
+  "$schema": "https://containers.dev/schemas/devcontainer.json",
+  "image": "mcr.microsoft.com/devcontainers/universal:2",
+
+  "features": {
+    "ghcr.io/devcontainers/features/android:1": {}
+  },
+
+  "customizations": {
+    "vscode": {
+      "extensions": [
+        "vscjava.vscode-java-pack",
+        "redhat.java",
+        "ms-vscode.cpptools",
+        "kdzwinel.vscode-android-remote",
+        "github.vscode-pull-request-github"
+      ],
+      "settings": {
+        "editor.formatOnSave": true
+      }
+    }
+  },
+
+  "remoteUser": "vscode",
+
+  "containerEnv": {
+    "ANDROID_SDK_ROOT": "/opt/android",
+    "ANDROID_HOME": "/opt/android",
+    "PATH": "/opt/android/cmdline-tools/latest/bin:/opt/android/platform-tools:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin"
+  },
+
+  "postCreateCommand": "mkdir -p /opt/android && if command -v sdkmanager >/dev/null 2>&1; then sdkmanager --sdk_root=/opt/android \"platform-tools\" \"platforms;android-33\" \"build-tools;33.0.0\" || true && yes | sdkmanager --sdk_root=/opt/android --licenses || true; else echo 'Android cmdline tools not installed'; fi",
+
+  "forwardPorts": [5037, 5555],
+
+  "workspaceFolder": "/workspaces/${localWorkspaceFolderBasename}",
+
+  "shutdownAction": "stop"
+}
