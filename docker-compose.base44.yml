@@ -1,0 +1,42 @@
+# Base44 sandbox environment for this repository.
+#
+# This repository is documentation only (Markdown files, licences and images under
+# docs/): there is no application to build, no package manifest and no test suite.
+# The `docs` service renders the repository's Markdown as HTML and serves its
+# assets, so the docs can be read in the preview.
+#
+#   docker compose -f docker-compose.base44.yml up -d
+#
+# Nothing here is a sandbox-only hack: the same command works on any machine with
+# Docker, and the server itself has no host/origin allowlist to relax.
+
+services:
+  docs:
+    image: python:3.12-slim
+    working_dir: /app
+    command:
+      - sh
+      - -ec
+      - pip install --no-cache-dir -r requirements-docs.txt && exec python docs_server.py
+    volumes:
+      # Bind mount the checkout so edits to Markdown/images show up on reload.
+      - ./:/app
+    environment:
+      - PORT=3000
+    ports:
+      - "3000:3000"
+    healthcheck:
+      test:
+        - CMD
+        - python
+        - -c
+        - import urllib.request,sys; sys.exit(0 if b'Remote Repositories' in urllib.request.urlopen('http://127.0.0.1:3000/', timeout=5).read() else 1)
+      interval: 15s
+      timeout: 5s
+      retries: 5
+      start_period: 60s
+    restart: on-failure
+    labels:
+      base44.project: "Remote Repositories Docs"
+      base44.kind: "web"
+      base44.port: "3000"
